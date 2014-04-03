@@ -1,23 +1,18 @@
+/*
+ * Copyright (c) 2014 Timo Weiß
+ */
+
 define(function (require, exports, module) {
     "use strict";
-
-    //var ExtensionUtils = brackets.getModule("utils/ExtensionUtils");
 
     var AppInit = brackets.getModule("utils/AppInit");
     var EditorManager = brackets.getModule("editor/EditorManager");
     var DocumentManager = brackets.getModule("document/DocumentManager");
 
-
-    /*
-    ExtensionUtils.loadStyleSheet(module, "css/bootstrap-responsive.css");
-    ExtensionUtils.loadStyleSheet(module, "node_modules/font-awesome/css/font-awesome.css");
-    */
-
-
     var Plugin = {
         initialize: function () {
             console.log("asd");
-            this.registerEvents()
+            this.registerEvents();
             $('#status-info').append('<div id="copiedMessage" style="margin: 0 0 0 10px;"></div>');
         },
         registerEvents: function() {
