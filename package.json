@@ -1,4 +1,12 @@
 {
-    "name": "copy-notification",
-    "version": "0.0.1"
+"name": "brackets-oncopy",
+"title": "Brackets OnCopy",
+"description": "Small notification about the amount of copied characters in the statusbar",
+"homepage": "https://github.com/timoweiss/brackets-oncopy",
+"version": "1.0.0",
+"author": "Timo Weiß <info@timo-weiss.com> (https://github.com/timoweiss)",
+"license": "MIT",
+"engines": {
+"brackets": ">=0.24.0"
+}
 }
