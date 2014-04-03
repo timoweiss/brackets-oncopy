@@ -1,0 +1,4 @@
+brackets-oncopy
+===============
+
+[brackets-extension]
