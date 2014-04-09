@@ -8,12 +8,18 @@ define(function (require, exports, module) {
     var AppInit = brackets.getModule("utils/AppInit");
     var EditorManager = brackets.getModule("editor/EditorManager");
     var DocumentManager = brackets.getModule("document/DocumentManager");
+    var StatusBar = brackets.getModule("widgets/StatusBar");
+    var MESSAGEINDIC = 'charsCopied';
+
 
     var Plugin = {
         initialize: function () {
-            console.log("asd");
+
+
+            StatusBar.addIndicator(MESSAGEINDIC, $(statusIconHtml), false, "", "", "status-indent");
+
             this.registerEvents();
-            $('#status-info').append('<div id="copiedMessage" style="margin: 0 0 0 10px;"></div>');
+            //$('#status-info').append('<div id="copiedMessage" style="margin: 0 0 0 10px;"></div>');
         },
         registerEvents: function() {
                 var that = this;
@@ -25,10 +31,15 @@ define(function (require, exports, module) {
             var selection =  this.getActiveEditor().getSelectedText();
             var $copiedMessage = $('#copiedMessage');
 
+            var MESSAGEINDIC = 'charsCopied';
+
+            StatusBar.updateIndicator(MESSAGEINDIC, true, "status-indent", 'copied ' + selection.length + 'asd');
+
             $copiedMessage.html('');
             $copiedMessage.html('<div class="copiedMessageText"> copied ' + selection.length + '  characters to clipboard </div>');
             setTimeout(function() {
-                $('#copiedMessage .copiedMessageText').fadeOut();
+                StatusBar.updateIndicator(MESSAGEINDIC, false, "status-indent", 'copied ' + selection.length + 'asd');
+
             }, 2000);
         },
         getActiveEditor: function() {

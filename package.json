@@ -1,12 +1,21 @@
 {
-"name": "brackets-oncopy",
-"title": "Brackets OnCopy",
-"description": "Small notification about the amount of copied characters in the statusbar",
-"homepage": "https://github.com/timoweiss/brackets-oncopy",
-"version": "1.0.0",
-"author": "Timo Weiß <info@timo-weiss.com> (https://github.com/timoweiss)",
-"license": "MIT",
-"engines": {
-"brackets": ">=0.24.0"
-}
+  "name": "brackets-oncopy",
+  "title": "Brackets OnCopy",
+  "description": "Small notification about the amount of copied characters in the statusbar",
+  "homepage": "https://github.com/timoweiss/brackets-oncopy",
+  "version": "1.0.0",
+  "author": "Timo Weiß <info@timo-weiss.com> (https://github.com/timoweiss)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timoweiss/brackets-oncopy.git"
+  },
+  "engines": {
+    "brackets": ">=0.24.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0"
+  }
 }
