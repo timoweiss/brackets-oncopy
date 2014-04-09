@@ -13,6 +13,9 @@
   "engines": {
     "brackets": ">=0.24.0"
   },
+    "scripts": {
+        "test": "grunt --verbose"
+    },
   "devDependencies": {
     "grunt": "^0.4.4",
     "grunt-cli": "^0.1.13",
