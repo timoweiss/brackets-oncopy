@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/timoweiss/brackets-oncopy.png?label=ready&title=Ready)](https://waffle.io/timoweiss/brackets-oncopy)
 brackets-oncopy
 ===============
 
